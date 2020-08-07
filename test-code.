@@ -4,13 +4,4 @@ hello there
 Hi
 hey
 Hello
-bonjour
-
-#instructions:
-1. git status
-2. git add filename
-3. git status
-4. git commit -m "message here"
-5. git status
-6. git push
-7. git status
+Hello again
