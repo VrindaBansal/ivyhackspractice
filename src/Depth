@@ -1,0 +1,57 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Depth {
+    static int n;
+    static ArrayList<Integer>[] adjList;
+    static int[] depth;
+
+    public static void DFS(int node, int counter) {
+        depth[node] = counter;
+        System.out.print(node + " depth=" + depth[node] + "\n");
+        for(int i : adjList[node]) {
+            DFS(i, counter + 1);
+        }
+    }
+
+    /**
+     * 6
+     * 3 1 2 3
+     * 1 4
+     * 1 5
+     * 0
+     * 0
+     * 0
+     *
+     * @param args
+     */
+    public static void main(String[] args) {
+        System.out.print("please enter number of nodes:");
+
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+
+        System.out.print("Starting enter adjacent edge list.....\n");
+
+        adjList = new ArrayList[n];
+        depth = new int[n];
+
+        for (int i = 0; i < n; i++) {
+            adjList[i] = new ArrayList<Integer>();
+            System.out.print("Please enter number of edge nodes for node[" + i + "]:\n");
+            int m = sc.nextInt();
+
+            for (int j = 0; j < m; j++) {
+                System.out.print(" please enter edge node[" + j + "]:\n");
+                adjList[i].add(sc.nextInt());
+            }
+        }
+        System.out.print("Show depth for each node.....\n");
+        DFS(0, 0);
+        for (int i=0 ; i < depth.length ; i ++) {
+            System.out.println("node[" + i +"] depth: "+ depth[i]);
+        }
+
+
+    }
+}
