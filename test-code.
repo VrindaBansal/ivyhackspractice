@@ -7,6 +7,7 @@ hello there
 Hi
 hey
 Hello
+<<<<<<< HEAD
 bonjour
 <<<<<<< HEAD
 >>>>>>> 13415934bc11ddb59ee72d274c66f0faefe64885
@@ -27,3 +28,6 @@ bonjour
 
 h
 >>>>>>> refs/remotes/origin/master
+=======
+Hello again
+>>>>>>> 49e75413fa1002c061f63a57082e88805246f68f
