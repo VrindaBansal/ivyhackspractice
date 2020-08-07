@@ -8,4 +8,22 @@ Hi
 hey
 Hello
 bonjour
+<<<<<<< HEAD
 >>>>>>> 13415934bc11ddb59ee72d274c66f0faefe64885
+=======
+
+<<<<<<< HEAD
+
+=======
+#instructions:
+1. git status
+2. git add filename
+3. git status
+4. git commit -m "message here"
+5. git status
+6. git push
+7. git status
+>>>>>>> e3dc2672540bf406e8fe76b1161ac5367aa5f51e
+
+h
+>>>>>>> refs/remotes/origin/master
