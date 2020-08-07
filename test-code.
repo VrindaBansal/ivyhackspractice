@@ -1,4 +1,11 @@
 
 print("hello world")
 hello there
+<<<<<<< HEAD
  :d :D ;/
+=======
+Hi
+hey
+Hello
+bonjour
+>>>>>>> 13415934bc11ddb59ee72d274c66f0faefe64885
